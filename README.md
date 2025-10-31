@@ -1,4 +1,3 @@
-````
 # IV Scaner (App de Escaneo de Precios)
 
 `IV Scaner` es una aplicación móvil desarrollada con **React Native (Expo)** que permite a los usuarios escanear códigos de barras (EAN) de productos y obtener una comparativa de precios en tiempo real, consultando la API de **Precios Claros** para sucursales específicas en Tucumán.
@@ -7,23 +6,23 @@ La aplicación está diseñada para un uso interno, permitiendo al usuario selec
 
 ## 🚀 Características Principales
 
-* **Selección de Sucursal:** El usuario debe seleccionar su sucursal actual ('CORRIENTES', 'BELGRANO', 'SANTIAGO', '9 DE JULIO') antes de comenzar a escanear.
-* **Escaneo de Códigos de Barras:** Utiliza `expo-camera` para escanear rápidamente códigos EAN-13, EAN-8 y UPC-E.
-* **Confirmación de EAN:** Permite al usuario verificar y/o editar manualmente el código EAN detectado antes de realizar la consulta.
-* **Consulta a API de Precios Claros:** Se conecta al servicio de Precios Claros para obtener un listado de precios del producto en las sucursales de la competencia predefinidas en Tucumán.
-* **Visualización de Resultados:** Muestra el nombre del producto, su imagen (si está disponible), y los precios **mínimo** y **máximo** encontrados.
-* **Detalle de Competencia:** Permite desplegar un listado detallado de qué sucursal de la competencia tiene qué precio.
-* **Historial Local:** Guarda un registro de los productos escaneados durante el día en la sucursal seleccionada, utilizando `AsyncStorage` para consulta rápida en la `HomeScreen`.
-* **Auditoría en la Nube:** Envía una copia de cada escaneo (EAN, sucursal, precios) a una base de datos **Firebase Firestore** para un registro centralizado.
+- **Selección de Sucursal:** El usuario debe seleccionar su sucursal actual ('CORRIENTES', 'BELGRANO', 'SANTIAGO', '9 DE JULIO') antes de comenzar a escanear.
+- **Escaneo de Códigos de Barras:** Utiliza `expo-camera` para escanear rápidamente códigos EAN-13, EAN-8 y UPC-E.
+- **Confirmación de EAN:** Permite al usuario verificar y/o editar manualmente el código EAN detectado antes de realizar la consulta.
+- **Consulta a API de Precios Claros:** Se conecta al servicio de Precios Claros para obtener un listado de precios del producto en las sucursales de la competencia predefinidas en Tucumán.
+- **Visualización de Resultados:** Muestra el nombre del producto, su imagen (si está disponible), y los precios **mínimo** y **máximo** encontrados.
+- **Detalle de Competencia:** Permite desplegar un listado detallado de qué sucursal de la competencia tiene qué precio.
+- **Historial Local:** Guarda un registro de los productos escaneados durante el día en la sucursal seleccionada, utilizando `AsyncStorage` para consulta rápida en la `HomeScreen`.
+- **Auditoría en la Nube:** Envía una copia de cada escaneo (EAN, sucursal, precios) a una base de datos **Firebase Firestore** para un registro centralizado.
 
 ## 🛠️ Stack de Tecnologías
 
-* **Framework:** React Native (con Expo)
-* **Navegación:** Expo Router
-* **Escáner:** Expo Camera
-* **Base de Datos (Auditoría):** Firebase Firestore
-* **Base de Datos (Local):** AsyncStorage
-* **Lenguaje:** TypeScript
+- **Framework:** React Native (con Expo)
+- **Navegación:** Expo Router
+- **Escáner:** Expo Camera
+- **Base de Datos (Auditoría):** Firebase Firestore
+- **Base de Datos (Local):** AsyncStorage
+- **Lenguaje:** TypeScript
 
 ## 📂 Estructura del Proyecto
 
@@ -72,15 +71,16 @@ La aplicación está diseñada para un uso interno, permitiendo al usuario selec
 ## 🏁 Cómo Empezar
 
 1.  **Instalar dependencias**
+
     ```bash
     npm install
     ```
 
 2.  **Configurar las claves de API**
-    * Reemplaza las claves hardcodeadas en `services/firebaseConfig.ts` y `services/preciosClarosService.ts` con tus propias claves (o, preferiblemente, implementa variables de entorno).
+
+    - Reemplaza las claves hardcodeadas en `services/firebaseConfig.ts` y `services/preciosClarosService.ts` con tus propias claves (o, preferiblemente, implementa variables de entorno).
 
 3.  **Iniciar el servidor de desarrollo**
     ```bash
     npx expo start
     ```
-````
