@@ -69,17 +69,6 @@ La aplicación está diseñada para un uso interno, permitiendo al usuario selec
 9.  El resultado del escaneo se guarda en Firestore (para auditoría) y en AsyncStorage (para el historial del día).
 10. Se muestra `ResultScreen.tsx` con la información obtenida.
 
-## ⚠️ Configuración y Seguridad
-
-Este proyecto requiere claves de API para funcionar, las cuales están actualmente hardcodeadas en los archivos de servicio. Para un entorno de producción, **debes** moverlas a variables de entorno.
-
-1.  **Firebase (`services/firebaseConfig.ts`):**
-    * Contiene la configuración de conexión a tu proyecto de Firebase. Se recomienda gestionar esto a través de variables de entorno de Expo (EAS Secrets) o un servicio de configuración remota.
-
-2.  **API Precios Claros (`services/preciosClarosService.ts`):**
-    * El archivo contiene una `API_KEY` hardcodeada. Esta clave debe ser extraída y almacenada de forma segura.
-    * También define una lista fija de `SUCURSALES_TUCUMAN` que son el objetivo de la consulta.
-
 ## 🏁 Cómo Empezar
 
 1.  **Instalar dependencias**
